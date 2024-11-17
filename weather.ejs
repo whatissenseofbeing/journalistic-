@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Information</h1>
+    <a href="/dashboard">Back to Dashboard</a>
+  </header>
+
+  <main>
+    <h2>City: <%= weather.name %></h2>
+    <p>Temperature: <%= weather.main.temp %>°K</p>
+    <p>Weather: <%= weather.weather[0].description %></p>
+    <p>Humidity: <%= weather.main.humidity %>%</p>
+    <p>Wind Speed: <%= weather.wind.speed %> m/s</p>
+  </main>
+</body>
+</html>
